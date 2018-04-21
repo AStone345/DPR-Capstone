@@ -1,0 +1,60 @@
+
+header{
+	background-color: blue;
+	border-bottom: 3px solid red;
+	font: 14px Helvetica, "Helvetica Neue", Arial, sans-serif;
+	padding: .5em;
+}
+color: #b3ecff;    /*I don't know why but if this line is deleted, everything moves around */
+
+.container {
+  display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+    flex: 1;
+}
+
+.school {
+	padding-left: 6em;
+	color: white;
+}
+
+.end {
+	padding-right: 2em;
+}
+
+  li a {
+    display: block;
+    color: #b3ecff;
+    text-align: center;
+    padding: .25em .75em;
+    text-decoration: none;
+}
+
+@media all and (max-width: 600px) {
+  
+  .container {
+    flex-wrap: wrap;
+  }
+  
+  li {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  li {
+    flex-basis: 100%;
+  }
+}
+
+ 
